@@ -3,7 +3,7 @@ Code for paper "Deep Image-Based Relighting from Optimal Sparse Samples".
 For more details, please refer to http://viscomp.ucsd.edu/projects/SIG18Relighting
 
 ## Disclaimer
-**This software is published for academic and non-commercial use only.**
+**This software and related data are published for academic and non-commercial use only.**
 
 ## Data
 The traing and testing data can be downloaded from:
