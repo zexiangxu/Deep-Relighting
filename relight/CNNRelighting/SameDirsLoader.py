@@ -118,7 +118,7 @@ class SameDirsLoader_slow(object):
         return imgs
 
     def takeInputs(self, ids):
-        if self.curInputIDs == None:
+        if type(self.curInputIDs) == type(None):
             return None
 
         ids = np.reshape(ids, -1).astype(int)
@@ -162,7 +162,7 @@ class SameDirsLoader_slow(object):
         self.curInputShapeId = shapeId
         print "taken", self.curInputShapeId
 
-        if self.curInputIDs != None:
+        if type(self.curInputIDs) != type(None):
             self.curInput = np.zeros((interImg.shape[0], interImg.shape[1])+ (len(self.curInputIDs)*3,),np.uint8)
             for ii,id in enumerate(self.curInputIDs):
                 self.curInput[:,:,ii*3:ii*3+3] = self.curData[id]
